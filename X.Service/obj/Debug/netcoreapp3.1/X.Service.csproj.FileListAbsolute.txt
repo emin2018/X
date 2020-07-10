@@ -1,0 +1,14 @@
+C:\Users\meseymenoglu\source\repos\X\X.Service\obj\Debug\netcoreapp3.1\X.Service.csprojAssemblyReference.cache
+C:\Users\meseymenoglu\source\repos\X\X.Service\obj\Debug\netcoreapp3.1\X.Service.AssemblyInfoInputs.cache
+C:\Users\meseymenoglu\source\repos\X\X.Service\obj\Debug\netcoreapp3.1\X.Service.AssemblyInfo.cs
+C:\Users\meseymenoglu\source\repos\X\X.Service\obj\Debug\netcoreapp3.1\X.Service.csproj.CoreCompileInputs.cache
+C:\Users\meseymenoglu\source\repos\X\X.Service\bin\Debug\netcoreapp3.1\X.Service.deps.json
+C:\Users\meseymenoglu\source\repos\X\X.Service\bin\Debug\netcoreapp3.1\X.Service.dll
+C:\Users\meseymenoglu\source\repos\X\X.Service\bin\Debug\netcoreapp3.1\X.Service.pdb
+C:\Users\meseymenoglu\source\repos\X\X.Service\bin\Debug\netcoreapp3.1\X.Core.dll
+C:\Users\meseymenoglu\source\repos\X\X.Service\bin\Debug\netcoreapp3.1\X.Data.dll
+C:\Users\meseymenoglu\source\repos\X\X.Service\bin\Debug\netcoreapp3.1\X.Core.pdb
+C:\Users\meseymenoglu\source\repos\X\X.Service\bin\Debug\netcoreapp3.1\X.Data.pdb
+C:\Users\meseymenoglu\source\repos\X\X.Service\obj\Debug\netcoreapp3.1\X.Service.csproj.CopyComplete
+C:\Users\meseymenoglu\source\repos\X\X.Service\obj\Debug\netcoreapp3.1\X.Service.dll
+C:\Users\meseymenoglu\source\repos\X\X.Service\obj\Debug\netcoreapp3.1\X.Service.pdb

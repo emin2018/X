@@ -1,0 +1,9 @@
+C:\Users\meseymenoglu\source\repos\X\X.Core\bin\Debug\netcoreapp3.1\X.Core.deps.json
+C:\Users\meseymenoglu\source\repos\X\X.Core\bin\Debug\netcoreapp3.1\X.Core.dll
+C:\Users\meseymenoglu\source\repos\X\X.Core\bin\Debug\netcoreapp3.1\X.Core.pdb
+C:\Users\meseymenoglu\source\repos\X\X.Core\obj\Debug\netcoreapp3.1\X.Core.csprojAssemblyReference.cache
+C:\Users\meseymenoglu\source\repos\X\X.Core\obj\Debug\netcoreapp3.1\X.Core.AssemblyInfoInputs.cache
+C:\Users\meseymenoglu\source\repos\X\X.Core\obj\Debug\netcoreapp3.1\X.Core.AssemblyInfo.cs
+C:\Users\meseymenoglu\source\repos\X\X.Core\obj\Debug\netcoreapp3.1\X.Core.csproj.CoreCompileInputs.cache
+C:\Users\meseymenoglu\source\repos\X\X.Core\obj\Debug\netcoreapp3.1\X.Core.dll
+C:\Users\meseymenoglu\source\repos\X\X.Core\obj\Debug\netcoreapp3.1\X.Core.pdb
