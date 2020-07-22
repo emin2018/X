@@ -17,6 +17,7 @@ using X.Data.EntityFrameworkCore;
 using X.Data.EntityFrameworkCore.Repositories;
 using X.Data.EntityFrameworkCore.UnitOfWorks;
 using X.Service.Services;
+using X.Web.Filters;
 
 namespace X.Web
 {
@@ -32,6 +33,7 @@ namespace X.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddScoped(typeof(NotFoundFilter<>));
             services.AddAutoMapper(typeof(Startup));
             #region Generic Repository AddScoped
             /*AddScoped Generic yapýmýzda eðer bir interface ile karþýlaþýrsa onu ne ile çalýþmasý gerekitiðini belirliyor

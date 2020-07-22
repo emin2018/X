@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using X.Core.Entities;
 using X.Core.Services;
 using X.Web.DTOs;
+using X.Web.Filters;
 
 namespace X.Web.Controllers
 {
@@ -47,6 +48,13 @@ namespace X.Web.Controllers
         public IActionResult Update(PersonDto personDto)
         {
             _personService.Update(_mapper.Map<Person>(personDto));
+            return RedirectToAction("Index");
+        }
+        [ServiceFilter(typeof(NotFoundFilter<Person>))]
+        public IActionResult Delete(int id)
+        {
+            var person = _personService.GetByIdAsync(id).Result;
+            _personService.Delete(person);
             return RedirectToAction("Index");
         }
     }
