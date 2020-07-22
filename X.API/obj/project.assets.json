@@ -6105,8 +6105,6 @@
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 7.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.0-preview.6.20312.4",
       "Swashbuckle.AspNetCore >= 5.5.1",
-      "X.Core >= 1.0.0",
-      "X.Data >= 1.0.0",
       "X.Service >= 1.0.0"
     ]
   },
@@ -6143,12 +6141,6 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\meseymenoglu\\source\\repos\\X\\X.Core\\X.Core.csproj": {
-              "projectPath": "C:\\Users\\meseymenoglu\\source\\repos\\X\\X.Core\\X.Core.csproj"
-            },
-            "C:\\Users\\meseymenoglu\\source\\repos\\X\\X.Data\\X.Data.csproj": {
-              "projectPath": "C:\\Users\\meseymenoglu\\source\\repos\\X\\X.Data\\X.Data.csproj"
-            },
             "C:\\Users\\meseymenoglu\\source\\repos\\X\\X.Service\\X.Service.csproj": {
               "projectPath": "C:\\Users\\meseymenoglu\\source\\repos\\X\\X.Service\\X.Service.csproj"
             }

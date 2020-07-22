@@ -1,17 +1,11 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using X.API.Filters;
 using X.Core.Repositories;
@@ -21,6 +15,7 @@ using X.Data.EntityFrameworkCore;
 using X.Data.EntityFrameworkCore.Repositories;
 using X.Data.EntityFrameworkCore.UnitOfWorks;
 using X.Service.Services;
+using X.API.Extensions;
 
 namespace X.API
 {
@@ -38,12 +33,17 @@ namespace X.API
         {
             services.AddScoped(typeof(NotFoundFilter<>));
             services.AddAutoMapper(typeof(Startup));
+            #region Generic Repository AddScoped
+            /*AddScoped Generic yapýmýzda eðer bir interface ile karþýlaþýrsa onu ne ile çalýþmasý gerekitiðini belirliyor
+             eðer ikinci bir interface ile karþýlaþýrsa ilk oluþturduðunu kullanýyor yeniden oluþturmasý içinde yöntem var(services.AddTransient)
+            fakat performans açýsýndan bu daha iyi */
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
             services.AddScoped(typeof(IService<>), typeof(Service.Services.Service<>));
             services.AddScoped<IPersonService, PersonService>();
             services.AddScoped<IProductService, ProductService>();
             services.AddScoped<IPersonProductRelationService, PersonProductRelationService>();
             services.AddScoped<IUnitOfWork,UnitOfWork>();
+            #endregion
             services.AddDbContext<XDbContext>(options =>
             {
                 options.UseSqlServer(Configuration["ConnectionStrings:SqlConStr"].ToString(),ops=>ops.MigrationsAssembly("X.Data"));
@@ -73,6 +73,8 @@ namespace X.API
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseCustomException();
 
             app.UseHttpsRedirection();
 

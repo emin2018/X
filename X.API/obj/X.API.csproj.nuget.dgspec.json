@@ -33,12 +33,6 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\meseymenoglu\\source\\repos\\X\\X.Core\\X.Core.csproj": {
-                "projectPath": "C:\\Users\\meseymenoglu\\source\\repos\\X\\X.Core\\X.Core.csproj"
-              },
-              "C:\\Users\\meseymenoglu\\source\\repos\\X\\X.Data\\X.Data.csproj": {
-                "projectPath": "C:\\Users\\meseymenoglu\\source\\repos\\X\\X.Data\\X.Data.csproj"
-              },
               "C:\\Users\\meseymenoglu\\source\\repos\\X\\X.Service\\X.Service.csproj": {
                 "projectPath": "C:\\Users\\meseymenoglu\\source\\repos\\X\\X.Service\\X.Service.csproj"
               }
